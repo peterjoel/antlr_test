@@ -1,4 +1,4 @@
-package computer.model;
+package comparer.model;
 
 import java.util.function.BiFunction;
 

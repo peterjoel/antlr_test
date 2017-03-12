@@ -1,7 +1,7 @@
 grammar Computation;
 
 @header {
-    import computer.model.Operator;
+    import comparer.model.Operator;
 }
 
 computation : comparison | negation ;

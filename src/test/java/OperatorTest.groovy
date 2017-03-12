@@ -1,5 +1,5 @@
-import computer.model.Operator
-import computer.model.Value
+import comparer.model.Operator
+import comparer.model.Value
 import org.junit.Test
 
 import static org.hamcrest.MatcherAssert.assertThat;

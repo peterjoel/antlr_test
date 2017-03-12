@@ -1,4 +1,4 @@
-package computer.model;
+package comparer.model;
 
 /**
  * Created by peter on 11/03/2017.

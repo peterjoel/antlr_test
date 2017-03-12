@@ -1,4 +1,4 @@
-package computer
+package comparer
 
 import org.junit.Test
 

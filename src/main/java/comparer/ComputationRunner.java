@@ -1,7 +1,7 @@
-package computer;
+package comparer;
 
 
-import computer.model.*;
+import comparer.model.*;
 import org.antlr.v4.runtime.*;
 
 import java.util.Optional;
