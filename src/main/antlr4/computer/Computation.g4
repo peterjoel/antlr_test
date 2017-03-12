@@ -1,5 +1,8 @@
 grammar Computation;
 
+@header {
+    import computer.model.Operator;
+}
 
 computation : comparison | negation ;
 
@@ -9,9 +12,15 @@ comparison : value operator value ;
 
 value : DIGITS ;
 
-NOT : 'NOT' | '!' ;
+operator returns [Operator op]
+         : '<'  { $op = Operator.LT;   }
+         | '<=' { $op = Operator.LTEQ; }
+         | '>'  { $op = Operator.GT;   }
+         | '>=' { $op = Operator.GTEQ; }
+         | '='  { $op = Operator.EQ;   }
+         | '!=' { $op = Operator.NEQ;  };
 
-operator : '<' | '<=' | '>' | '>=' | '=' | '!=' ;
+NOT : 'NOT' | '!' ;
 
 DIGITS : ('0'..'9')+ ;
 
